@@ -17,13 +17,6 @@ bingo = multiprocessing.Queue()
 
 class DomainsBrute:
     def __init__(self, target_domain, subdomain_dict):
-        """
-        初始化类和成员变量
-        :param target_domain:  目标域名host
-        :param subdomain_dict: 子域名爆破字典
-        :param domain_id: 域名在数据库中所对应的IP
-        :param domain_name: 域名的名字，如百度
-        """
         self.target_domain = target_domain  
         self.subdomain_dict = subdomain_dict  
         self.domain_list = [] 
